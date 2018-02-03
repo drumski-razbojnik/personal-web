@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import './variables.scss';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(226, 226, 226);
+  color: #333;
+  font-size: 10px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $default-font;
+  height: 100%;
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: $header-font-color;
+  font-family: $header-font;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  &.x-small {
+     font-size: 1.5rem;
+  }
+  &.small {
+    font-size: 2rem;
+  }
+  &.large {
+    font-size: 3rem;
+  }
+  &.x-large {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-size: 1.8rem;
+  &.x-small {
+    font-size: 1.4rem;
+  }
+  &.small {
+    font-size: 1.6rem;
+  }
+  &.large {
+    font-size: 2rem;
+  }
+  &.x-large {
+    font-size: 2.2rem;
+  }
+}
+
+p {
+  font-size: 1.3rem;
+  &.x-small {
+    font-size: 1.1rem;
+  }
+  &.small {
+    font-size: 1.2rem;
+  }
+  &.large {
+    font-size: 1.4rem;
+  }
+}
+
+pre {
+  overflow-x: scroll;
+  code {
+    font-family: $code-font;
+  }
+}
+
+.content {
+  background: $default-background-color;
+  @media screen and (max-width: $break-medium) {
+    flex: 1 0 100%;
+  }
+  @media screen and (min-width: $break-large) {
+    flex: 1 0 80%;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+}
